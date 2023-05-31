@@ -1,0 +1,233 @@
+@import './resets';
+@import './variables.scss';
+
+
+
+@function weight($weight-name)
+{
+    @return map-get($font-weight, $weight-name )
+}
+
+*
+{
+    font-size: 6vw;
+}
+
+.top-content {
+    background-image: url(../public/images/pattern-bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    padding-bottom: 7rem;
+
+    h1
+    {
+        margin: 1rem 0;
+        color: #fff;
+        font-weight: weight(medium);
+    }
+
+    input[type="text"]
+    {
+        padding: 0.6rem 1rem;   
+        font-size: 0.8rem;
+        width: 75%;
+        height: 1rem;
+        font-weight: weight(medium);
+        border-radius: 4vw 0 0 4vw;
+        border: none;
+        cursor: pointer;
+
+        &:focus
+        {
+            border: none;
+            outline: none;
+        }
+    }
+
+    form
+    {
+        display: flex;
+        
+        .top--button
+        {
+            width: 2rem;
+            border-radius: 0 4vw 4vw 0;
+            border: none;
+            background-color: #000;
+            cursor: pointer;
+            transition: .3s;
+            
+            &:hover
+            {
+                background-color: $VeryDarkGray;
+
+            }
+
+            img
+            {
+                width: 0.5rem;
+            }
+        }
+    }
+
+    .top--main-data
+    {
+        background-color: #fff;
+        display: grid;
+        place-items: center;
+        margin-top: 1.3rem;
+        border-radius: 4vw;
+        padding: 0.7rem 0 0.4rem 0;
+        width: 83%;
+        position: absolute;
+        z-index: 100000;
+        top: 5rem;
+
+        h2
+        {
+            margin: 0.3rem 0;
+            color: $DarkGray;
+            font-size: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        p
+        {
+            margin: 0.2rem 0 0.5rem 0;
+            color: $VeryDarkGray;
+            font-weight: weight(bold);
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    }
+
+}
+
+@media (min-width: 450px) {
+    *
+    {
+        font-size: 4.5vw
+    }
+    .top-content {
+
+        input[type="text"]
+        {
+            width: 100%;
+            height: 1rem;
+        }
+
+        form
+        {
+        
+            .top--button
+            {
+                width: 3rem;
+                border-radius: 0 4vw 4vw 0;
+
+            }
+        }
+        .top--main-data
+        {
+            width: 66%;
+        }    
+}
+}
+
+@media (min-width: 600px) {
+    *
+    {
+        font-size: 3vw
+    }
+    .top-content {
+
+        .top--main-data
+           {
+               width: 46%;
+           }    
+
+    }
+}
+
+
+@media (min-width: 850px) {
+    *
+    {
+        font-size: 2.5vw
+    }
+    .top-content {
+        background-image: url(../public/images/pattern-bg-desktop.png);
+        padding-bottom: 5rem;
+
+
+        form
+        {
+            width: 50%;
+        }
+        .top--main-data
+        {
+            width: 80%;
+            padding-bottom: 1rem;
+            grid-template: auto / repeat(4, 1fr);
+
+            border-radius: 2vw;
+            top: 6rem;
+            padding: 0.7rem 1rem 0.4rem 1rem;
+            
+            div 
+            {
+                width: 90%;
+            }
+
+            h2
+            {
+                font-size: 0.7rem;
+            }
+
+            .last-p::after
+            {
+                display: none !important;
+            }
+
+            p
+            {
+                font-size: 0.8rem;
+                text-align: left;
+                margin-top: 0.7rem;
+                position: relative;
+            
+            
+            &::after
+            {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 0.1vw;
+                left: 14vw;
+                top: -1.7rem;
+                height: 5vw;
+                background-color: gray;
+            }
+        }
+        }
+    }
+}
+
+
+
+@media (min-width: 1300px) {
+    *
+    {
+        font-size: 1.5vw
+    }
+
+    .top-content {
+
+        .top--main-data
+        {
+            width: 65%;
+        }
+    }
+
+}
