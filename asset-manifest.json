@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/IpAddress-tracker-master--REACT-SASS-API/static/css/main.9cd3c803.css",
+    "main.js": "/IpAddress-tracker-master--REACT-SASS-API/static/js/main.5325dee2.js",
+    "static/media/pattern-bg-desktop.png": "/IpAddress-tracker-master--REACT-SASS-API/static/media/pattern-bg-desktop.5013c4f570ecf757f855.png",
+    "static/media/pattern-bg-mobile.png": "/IpAddress-tracker-master--REACT-SASS-API/static/media/pattern-bg-mobile.3666aa38dccbc0ebd679.png",
+    "index.html": "/IpAddress-tracker-master--REACT-SASS-API/index.html",
+    "static/media/icon-location.svg": "/IpAddress-tracker-master--REACT-SASS-API/static/media/icon-location.7e6459d2a9278295ae782e100965be4b.svg",
+    "main.9cd3c803.css.map": "/IpAddress-tracker-master--REACT-SASS-API/static/css/main.9cd3c803.css.map",
+    "main.5325dee2.js.map": "/IpAddress-tracker-master--REACT-SASS-API/static/js/main.5325dee2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9cd3c803.css",
+    "static/js/main.5325dee2.js"
+  ]
+}
